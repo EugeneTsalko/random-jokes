@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Mulish, sans-serif;
+}
+
+body {
+    background-color: #90E0EF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    justify-content: space-around;
+}
+
+.container {
+    background-color: white;
+    border-radius: 12px;
+    padding: 50px 10px;
+    max-width: 100%;
+    width: 700px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
+    0 6px 6px rgba(0, 0, 0, 0.1) 
+}
+
+img {
+    border-radius: 50%;
+}
+
+.shake {
+    animation: shake 0.25s;
+    animation-iteration-count: 1;
+}
+
+.joke {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 50px auto;
+    max-width: 500px;
+}
+
+.btn {
+    background-color: #00B4D8;
+    border: 0;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    padding: 14px 40px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
+    0 6px 6px rgba(0, 0, 0, 0.1)
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.footer {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 700px;
+ height: 50px;
+}
+
+.footer-item {
+    font-variant: small-caps;
+    color: #03045E;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: #03045E;
+    font-weight: bold;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 700px;
+  height: 30px;
+}
+
+.change-lng {
+  text-align: end;
+  border: 0;
+  background-color: #90E0EF;
+}
+
+
+@keyframes shake {
+    0% {
+      transform: translate(1px, 1px) rotate(36deg);
+    }
+    10% {
+      transform: translate(-1px, -2px) rotate(72deg);
+    }
+    20% {
+      transform: translate(-3px, 0px) rotate(108deg);
+    }
+    30% {
+      transform: translate(3px, 2px) rotate(144deg);
+    }
+    40% {
+      transform: translate(1px, -1px) rotate(180deg);
+    }
+    50% {
+      transform: translate(-1px, 2px) rotate(216deg);
+    }
+    60% {
+      transform: translate(-3px, 1px) rotate(252deg);
+    }
+    70% {
+      transform: translate(3px, 1px) rotate(288deg);
+    }
+    80% {
+      transform: translate(-1px, -1px) rotate(324deg);
+    }
+    90% {
+      transform: translate(1px, 2px) rotate(360deg);
+    }
+    100% {
+      transform: translate(1px, -2px) 
+    }
+  }
